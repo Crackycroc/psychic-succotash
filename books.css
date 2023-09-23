@@ -1,0 +1,589 @@
+*{
+    margin: 0;
+    padding: 0px;
+}
+
+a{
+    color: black;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+@font-face{
+    font-family:'Inter', sans-serif ;
+    src: url(Inter-Thin.ttf);
+}
+
+@font-face{
+    font-family: 'CinzelRegular', sans-serif;
+    src: url(CinzelRegular.ttf);
+}
+
+html{
+    height: 100%;
+}
+body{
+    position: relative;
+    margin: auto;
+    font-family: 'Inter',sans-serif;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: 'Inter',sans-serif;
+}
+#slide2{
+    position: absolute;
+    top: 1650;
+}
+/* the header at the top*/
+.blue{
+    position: relative;
+    top: 0;
+    height: 150;
+    width: 100%;
+    background-color: #D5E5EC;
+}
+
+.header{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.title{
+    position: relative;
+    top: 50;
+    left: 50;
+    font-family: 'CinzelRegular', sans-serif;
+    font-size: 36;
+    font-weight: bold;
+}
+
+.blue .nav{
+    position: relative;
+    bottom: -50;
+    left: 800;
+}
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Inter',sans-serif;
+}
+
+.nav ul li a:hover{
+    color: #0D53BC;
+}
+
+
+/* Search Bar
+.search-bar{
+    position: relative;
+    top: 19;
+    left: 350;
+    height: 30;
+    width: 400;
+    display: flex;
+    border-radius: 34px;
+    padding-right: 20px;
+    background: #F6F5F5;
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: black;
+}
+
+::placeholder{
+    color: black;
+}
+
+.search-bar button img{
+    width: 15;
+}
+.search-bar button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}*/
+
+.cart{
+    position: relative;
+    left: 1450;
+    bottom: 5;
+}
+.coming_soon{
+    position: relative;
+    top: 250;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Slideshow */
+
+.show{
+    position: absolute;
+    top: 200;
+    left: 500;
+    height: 466;
+    width: 844;
+}
+
+/*Sales Page*/
+.sale_{
+    position: relative;
+    top: 150;
+    font-size: 30px;
+}  
+
+/*Manga page*/
+.manga_pic{
+    position: relative;
+    top: 200;
+    height: 164;
+    width: 700;
+}
+.manga_pic2{
+    position: relative;
+    top: 200;
+    height: 200;
+    width: 600;
+}
+
+/* the book picture container*/
+
+.pic_container .book_pics{
+    position: relative;
+    top: 250;
+    height: 202;
+    width: 100%;
+}
+
+
+
+.book_list1{
+    position: relative;
+    top: 250;
+    left: 50;
+
+}
+
+.table_title{
+    position: relative;
+    left: -50;
+    padding-bottom: 50px;
+    font-size: 32;
+    font-family: 'Inter', sans-serif;
+}
+
+.goodson{
+    height: 420;
+    width: 272;
+    padding-right: 69px;
+}
+
+.thorns{
+    height: 420;
+    width: 272;
+    padding-right: 69px;
+}
+
+.roses{
+    height: 420;
+    width: 272;
+    padding-right: 69px;
+}
+
+.sam{
+    height: 420;
+    width: 272;
+}
+
+.more{
+    position: absolute;
+    top: 450;
+    left: 500;
+    padding-top: 50px;
+    align-items: center;
+    font-size: 25;
+    font-family: 'Inter', sans-serif;
+}
+
+/* second row Fiction*/
+
+.book_list2{
+    position: relative;
+    top: 566;
+    left: 50;
+}
+
+.table_title2{
+    position: relative;
+    left: -50;
+    padding: 50px;
+    font-size: 25;
+    font-family: 'Inter',sans-serif;
+}
+
+.hugo{
+    padding-right: 38px;
+    height: 230;
+    width: 155;
+    padding-bottom: 10px;
+}
+
+.verity{
+    padding-right: 38px;
+    height: 230;
+    width: 155;
+    padding-bottom: 10px;
+}
+
+.harper{
+    padding-right: 38px;
+    height: 230;
+    width: 155;
+    padding-bottom: 10px;
+}
+
+.beauty{
+    padding-right: 38px;
+    height: 230;
+    width: 155;
+    padding-bottom: 10px;
+}
+
+.guide{
+    padding-right: 38px;
+    height: 230;
+    width: 155;
+    padding-bottom: 10px;
+}
+
+.now{
+    padding-right: 38px;
+    height: 230;
+    width: 155;
+    padding-bottom: 10px;
+}
+
+.ugly{
+    padding-right: 38px;    
+    height: 230;
+    width: 155;
+    padding-bottom: 10px;
+}
+
+/* Third row book list */
+
+
+.book_list3{
+    position: relative;
+    top: 700;
+    left: 50;
+    padding-bottom: 50px;
+}
+
+.table_title3{
+    position: relative;
+    left: -50;
+    padding: 50px;
+    font-size: 25;
+    font-family: 'Inter',sans-serif;
+}
+.book_list4{
+    position: relative;
+    top: 350;
+    left: 50;
+}
+/* Book Title & Price*/
+
+.fma{
+    font-family: 'Inter',sans-serif;
+    font-size: 15;
+    font-weight: bold;
+} 
+
+.fma2{
+    font-family: 'Inter',sans-serif;
+    font-size: 15;
+    font-weight: thin;
+}
+
+/* fiction page*/
+
+.f_book1{
+    position: relative;
+    top: 100;
+    left: 50;
+}
+
+.f_book2{
+    position: relative;
+    top: 300;
+    left: 50;
+}
+
+.f_book3{
+    position: relative;
+    top: 400;
+    left: 50;
+}
+
+/*Prodcut Page */ 
+
+.mini_nav{
+    position: absolute;
+    top: 200;
+    left: 120;
+}
+
+.mini_nav ul li{
+    display: inline;
+    list-style: none;
+    padding: 5px;
+    font-family: 'Inter', sans-serif;
+}
+.product{
+    position: absolute;
+    padding-bottom: 50px;
+    top: 250;
+    left: 120;
+    height: 733;
+    width: 524;
+}
+
+.book{
+    position: relative;
+    border-radius: 2%;
+    height: 733;
+    width: 524;
+}
+
+.title_product_page{
+    position: absolute;
+    top: 250;
+    left: 763;
+    font-family: 'Inter',sans-serif;
+}
+
+#book-info #book-details{
+	margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+#book-info h2{
+	margin-top: 0;
+}
+
+#book-info h3{
+	margin: 10px 0;
+}
+
+button{
+    position: relative;
+    top: 100;
+	background-color: #000;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	padding: 10px 20px;
+}
+
+.description-container .describe{
+    position: relative;
+    top: 250;
+    height: 450;
+    width: 700;
+}
+
+.description-container .describe{
+    border: #000;
+    border-style: solid;
+    border-width: 2px;
+}
+.description-container{
+    padding-bottom: 20px;
+}
+
+.describe{
+    padding-top: 50px;
+    padding-left: 10px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.title-container{
+    position: relative;
+    padding-left: 10;
+    top: 300;
+}
+/* Select Box*/
+
+select{
+    appearance: none;
+    display: inline-block;
+}
+
+option{
+    position: relative;
+    padding-left: 20;
+    padding-top: 20;
+    white-space: nowrap;
+}
+
+#book_selections{
+    position: relative;
+    top: 200;
+    left: 50;
+}
+
+.horizontal_selection select option{
+    display: inline-block;
+}
+.horizontal_selection option{
+    display: inline-block;
+    width: 100;
+    height: 50;
+}
+
+.horizontal_selection, select, option{
+    overflow: visible;
+    vertical-align: top;
+    border: none;
+    outline: none;
+    display: inline-block;
+    background-color: #D3DBDF;
+    height: 50;
+    width: 103;
+    border-radius: 6px;
+    display: inline-block;
+    border-spacing: 50;
+}
+/* Desription*/
+
+
+.description{
+    position: relative;
+    top: 800;
+    left: 100;
+}
+
+.overview{
+    position: relative;
+    padding-left: 0px;
+    overflow: hidden;
+    top: 800;
+    left: 100;
+    width: 600;
+}
+.product_page_footer{
+    position: relative;
+    top: 1200;
+
+}
+
+/* Footer*/
+.footer{
+    position: relative;
+    margin-top: auto;
+    bottom: -700;
+    height: 350;
+    width: 100%;
+    background-color: #D5E5EC;
+}
+
+.footer .list{
+    position: absolute;
+    top: 25;
+    left: 701;
+    text-align: center;
+}
+
+.list li{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+    list-style-type: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.list a ul li{
+    text-decoration: none;
+}
+
+/*  insert form*/
+.book-form{
+    position: relative;
+    top: 100;
+    left: 500;
+    width: 563;
+    height: 884;
+    padding: 20px 20px;
+    line-height: 45px;
+    border-radius: 2%;
+    background-color: rgba(255, 255, 255, 0.82);
+}
+
+p {
+    font-family: 'Inter',sans-serif;
+    font-size: 20;
+}
+
+input{
+    background-color: #D5E5EC;
+    border-radius: 6px;
+    border-color: transparent;
+    height: 38;
+    width: 280;
+    float: right;
+
+}
+
+.login-box{
+    position: relative;
+    top: 100;
+    left: 500;
+    width: 563;
+    height: 400;
+    padding: 20px 20px;
+    line-height: 45px;
+    border-radius: 2%;
+    background-color: rgba(255, 255, 255, 0.82);
+}
+.terms_of-use{
+    position: relative;
+    top: 100;
+    width: 800;
+}
+
+.terms_of-use ul li{
+    line-height: 2;
+    list-style: none;
+    text-decoration: none;
+}
+
+.terms_of-use p{
+    font-size: 16px;
+}
+.policies{
+    position: relative;
+    top: 100;
+    width: 800;
+}
+.policies ul li{
+    line-height: 2;
+    list-style: none;
+    text-decoration: none;
+}
+.policies p{
+    font-size: 16px;
+}
+
+

@@ -1,0 +1,226 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="stlyes.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv=""X-UA-Compatible content="ie=edge">
+        <script type="text/javascript">
+			    var i = 0;
+			    var path = new Array();
+
+			    // List of slides
+			    path[0] = "./images/tokyo_ghoul.png";
+			    path[1] = "../book_website/images/woods.png";
+			    path[2] = "../book_website/images/colleen.png";
+
+			    var k = path.length-1;
+			    var caption = new Array();
+			    // List of captions
+
+			    caption[0] = "<a href=./nav_pages/sale.php>Click here for Books on sale</font></a>";
+			    caption[1] = "<a href=./nav_pages/manga.php>Go to Mangas and choose 2 books</a>";
+			    caption[2] = "<a href=./nav_pages/coming_soon.php>Coming Soon!</a>";
+
+			    function swapImage(){
+				    var el = document.getElementById("mydiv");
+				    el.innerHTML=caption[i];
+				    var img= document.getElementById("slide");
+				    img.src= path[i];
+
+				    if(i < k ) { i++;}
+					else  { i = 0; }
+					setTimeout("swapImage()",5000);
+
+				}
+
+		// Multiple onload function written by: Simon Willison
+		// http://simonwillison.net/2004/May/26/addLoadEvent/
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function() {
+					if (oldonload) {
+						oldonload();
+					}
+					func();
+				}//end of window.onload=function()
+			}
+		} //end of addLoadEvent()
+
+		addLoadEvent(function() { swapImage(); });
+	</script>
+    </head>
+    <body>
+        <section>
+            <div class="blue">
+                <div class="header">
+                    <a href="./books.php"><p class="title">It's Legit Books</p></a> 
+                    <div class="nav">
+                        <ul>
+                            <li> <a href="./books.php">Home</a> </li>                            
+                            <li>  <a href="./nav_pages/sale.php">Sale</a> </li>
+                            <li>  <a href="./nav_pages/top_seller.php">Top Seller</a> </li>
+                            <li>  <a href="./nav_pages/fiction.php">Fiction</a> </li>
+                            <li>  <a href="./nav_pages/manga.php">Manga</a> </li>
+                            <li>  <a href="./nav_pages/coming_soon.php">Coming Soon</a> </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <li>  <a href="../nav_pages/cart.php"><img src="./elements/ph_shopping-cart-thin.png" height="25" class="cart"></a> </li>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <br><br><br><br><br>
+        
+    <section>        
+        <center>      
+		    <img name="slide" id="slide" alt ="my images" height="411" width="100%" src="../book_website/images/court.png"/>
+		    <div id ="mydiv">  </div>
+        </center>
+    </section>
+    <center>
+   <table class="book_list1">
+    <tr>
+        <th class="table_title">
+            Top Seller 
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <a href="./product_pages/product_page.php"><img src="./images/goodson.jpg"  class="goodson"></a>
+            <h2 class="fma">The Good Son</h2>
+           <p class="fma2">You- Jeong Jeong<br> $11.99</p>
+        </td>
+        <td>
+            <a href="./product_pages/product_page_2.php"><img src="./images/court of throns.jpg" class="thorns"></a>
+            <h2 class="fma">A Court of Thorns and Roses</h2>
+           <p class="fma2">Sarah J. Maas <br> $20.99</p>
+        </td>
+        <td>
+            <a href="./product_pages/product_page_3.php"><img src="./images/Sweetes.jpg" class="roses"></a>
+            <h2 class="fma">The Sweetest Oblivion</h2>
+           <p class="fma2">Danielle Lori<br> $20.99</p>
+        </td>
+        <td>
+            <a href="./product_pages/product_page_4.php"><img src="./images/sam.png" class="sam"></a>
+            <h2 class="fma">You've Reached Sam</h2>
+           <p class="fma2">Dustin Thao <br> $11.99</p>
+        </td>
+    </tr>
+   </table>
+</center>
+   <section>
+        <a href="./nav_pages/sale.php"><img name="slide2" id="slide2" alt ="my images2" height="202" width="100%" src="../book_website/images/banner2.png"/> </a>
+		<div id ="mydiv2">  </div>
+   </section>
+<center>
+   <table class="book_list2">
+    <tr>
+        <th class="table_title2">
+            Fiction <a href="./nav_pages/fiction.php"><img src="./elements/arrow-right.png"></a>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <a href="./product_pages/product_page_5.php"><img src="./images/7_husbands.jpg"  class="hugo"></a>
+            <h2 class="fma"> The Seven Husbands of<br> Elevyn Hugo</h2>
+           <p class="fma2">Gege Akutami <br> $12.99</p>
+        </td>
+        <td>
+            <a href="./product_pages/product_page_6.php"><img src="./images/verity.jpg" class="verity"></a>
+            <h2 class="fma">Verity</h2>
+           <p class="fma2">Colleen Hoover <br> $18.99</p>
+        </td>
+        <td>
+            <a href="./product_pages/product_page_7.php"><img src="./images/ugly_love.jpg" class="ugly"></a>
+            <h2 class="fma">Ugly Love</h2>
+           <p class="fma2">Colleen Hoover <br> $18.99</p>
+        </td>
+        <td>
+            <a href="./product_pages/product_page_8.php"><img src="./images/message.jpg" class="harper"></a>
+            <h2 class="fma">I Hope You Get This <br> Message</h2>
+           <p class="fma2">Farah Naz Rishi <br> $12.99</p>
+        </td>
+        <td>
+            <a href="./product_pages/product_page_9.php"><img src="./images/The Beauty That Remains.jpg" class="beauty"></a>
+            <h2 class="fma">The Beauty that Remains</h2>
+           <p class="fma2">Ashley Woodfolk <br> $15.99</p>
+        </td>
+        <td>
+            <a href="./product_pages/product_page_10.php"><img src="./images/upstairs.jpg" class="guide"></a>
+            <h2 class="fma">The Upstair Room</h2>
+           <p class="fma2">Kate Murray Browne <br> $15.99</p>
+        </td>
+        <td>
+            <a href="./product_pages/product_page_11.php"><img src="./images/You'd Be Home Now.jpg" class="now"></a>
+            <h2 class="fma">You'd Be Home Now</h2>
+           <p class="fma2">Kathleen Glasgow<br> $21.99</p>
+        </td>
+    </tr>
+   </table>
+
+   <table class="book_list3">
+    <tr>
+        <th class="table_title3">
+            Manga <a href="./nav_pages/manga.php"><img src="./elements/arrow-right.png"></a>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <a href="./product_pages/product_page_12.php"><img src="./images/fma.jpg"  class="hugo"></a>
+            <h2 class="fma">Full Metal Alchemist Vol 18</h2>
+           <p class="fma2">Hiromu Arakawa <br> $15.99</p>
+        </td>
+        <td>
+            <a href="./product_pages/product_page_13.php"><img src="./images/jjk.jpg" class="verity"></a>
+            <h2 class="fma">Jujutsu Kaisen Vol 14</h2>
+           <p class="fma2">Gege Akutami <br> $8.99</p>
+        </td>
+        <td>
+            <a href="./product_pages/product_page_14.php"><img src="./images/tr_manga.jpg" class="ugly"></a>
+            <h2 class="fma">Tokyo Revengers Vol 19</h2>
+           <p class="fma2">Ken Wakui <br> $22.99</p>
+        </td>
+        <td>
+            <a href="./product_pages/product_page_15.php"><img src="./images/Maybe Meant to Be.jpg" class="harper"></a>
+            <h2 class="fma">Maybe Meant to Be</h2>
+           <p class="fma2">honeyskein <br> $3.99</p>
+        </td>
+        <td>
+            <a href="./product_pages/product_page_16.php"><img src="./images/narutomanga.jpg" class="beauty"></a>
+            <h2 class="fma">Naruto Vol 1</h2>
+           <p class="fma2">Masashi Kishimoto <br> $9.99</p>
+        </td>
+        <td>
+            <a href="./product_pages/product_page_17.php"><img src="./images/Tokyo-Ghoul-Vol.-1.jpg" class="guide"></a>
+            <h2 class="fma">Tokyo Ghoul Vol 1</h2>
+           <p class="fma2">Sui Ishida <br> $11.99</p>
+        </td>
+        <td>
+            <a href="./product_pages/product_page_18.php"><img src="./images/gangsta.jpg" class="now"></a>
+            <h2 class="fma">Gansta Vol 1</h2>
+           <p class="fma2">Kohske <br> $19.99</p>
+        </td>
+    </tr>
+   </table>
+</center>
+
+        <footer>
+            <div class="footer">    
+                <div class="list">
+                    <ul>
+                        <li> <a href="../book_website/books.php">HOME</a> </li>
+                        <li> <a href="../book_website/nav_pages/faq.php"> FAQ</a> </li>
+                        <li> <a href="../book_website/nav_pages/return.php"> RETURNS</a> </li>
+                        <li> <a href="../e-comm/client_side_book_query.php"> SEARCH </a> </li>
+                        <li> <a href="../book_website/nav_pages/contact.php"> CONTACTS</a> </li>
+                        <li> <a href="../book_website/sign_up_in.php">Staff Only</a> <li>
+                        <li> <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script>, BOOKS</p> </li>    
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
